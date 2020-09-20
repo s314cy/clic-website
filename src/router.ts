@@ -21,6 +21,7 @@ import { aboutPage } from './pages/about/about-page'
 import { icbdPage } from './pages/icbd/icbd-page'
 import { coachingPage } from './pages/coaching/coaching-page'
 import { coachingListRouter } from './pages/coaching/coaching-router'
+import { eventsPage } from './pages/events/events-page'
 import { notFoundPage } from './pages/404/404-page'
 
 /** Fresh router instance */
@@ -54,7 +55,7 @@ router.get('/coaching', coachingPage.render)
 /**
  * Events page
  */
-//router.get('/events', eventsPage.render)
+router.get('/events', eventsPage.render)
 
 /**
  * Sponsors router
